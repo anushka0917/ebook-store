@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #6200ea;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  position: sticky; /* Make header stick to the top */
+  top: 0; /* Stick to the top of the viewport */
+  z-index: 1000; /* Ensure it is above other content */
+}
+
+header h1 {
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.nav-button {
+  color: #6200ea;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+.nav-button:hover {
+  background-color: #d4c5f9;
+}
+
+.container {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow-y: auto; /* Allow scrolling */
+}
+
+h2 {
+  color: #6200ea;
+}
+
+/* Add styles for the Home component to make it more cohesive */
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2rem;
+  color: #5a3eec;
+  margin-bottom: 1rem;
+}
+
+.home input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.home .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.home label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.home label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.home select {
+  padding: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  overflow-y: auto; /* Allow scrolling for book list */
+  max-height: 400px; /* Limit height for scrolling effect */
+}

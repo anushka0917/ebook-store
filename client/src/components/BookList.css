@@ -1,0 +1,70 @@
+/* src/components/BookList.css */
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.book-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 220px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.book-thumbnail {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.book-details {
+  padding: 15px;
+}
+
+.book-details h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.book-authors {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.book-price {
+  color: #6200ea;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.book-description {
+  font-size: 0.85rem;
+  color: #555;
+  margin: 10px 0;
+  height: 60px;
+  overflow: hidden;
+}
+
+.add-to-cart-button {
+  background-color: #6200ea;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+  background-color: #5a3eec;
+}

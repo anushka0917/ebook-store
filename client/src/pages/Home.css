@@ -1,0 +1,46 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  color: #5a3eec;
+  margin-bottom: 1rem;
+}
+
+.home input[type="text"] {
+  padding: 10px;
+  width: 60%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.home .filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+
+.home label {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.home label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.home .sort-select {
+  padding: 10px;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
